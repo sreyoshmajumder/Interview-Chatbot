@@ -1,0 +1,71 @@
+# TalentScout Hiring Assistant - Complete Project Setup
+
+## Project Structure
+
+```
+talent-scout-hiring-assistant/
+├── app.py                          # Main Streamlit application
+├── config.py                       # Configuration and constants
+├── prompts.py                      # Prompt templates for LLM
+├── utils.py                        # Utility functions
+├── data_handler.py                 # Data storage and privacy handling
+├── requirements.txt                # Python dependencies
+├── .streamlit/
+│   └── config.toml                # Streamlit configuration
+├── .env.example                    # Environment variables template
+├── README.md                       # Comprehensive documentation
+├── demo_script.py                  # Script to demonstrate the chatbot
+└── docs/
+    ├── PROMPT_ENGINEERING.md       # Detailed prompt design documentation
+    ├── ARCHITECTURE.md             # Technical architecture documentation
+    └── DEPLOYMENT.md               # Deployment guide
+```
+
+## Files Overview
+
+### 1. **app.py** - Main Application
+- Streamlit interface with chat UI
+- Session state management
+- Conversation flow orchestration
+- LLM integration
+
+### 2. **config.py** - Configuration
+- System prompts and templates
+- Interview stages and flow
+- Technical topic mappings
+- Constants and settings
+
+### 3. **prompts.py** - Prompt Templates
+- Greeting prompt
+- Information gathering prompts
+- Technical question generation prompts
+- Context management prompts
+
+### 4. **utils.py** - Utilities
+- Message formatting
+- Input validation
+- Conversation context extraction
+- Response parsing
+
+### 5. **data_handler.py** - Data Privacy & Storage
+- Secure candidate data handling
+- Anonymization utilities
+- Data validation and compliance
+- Simulated data storage
+
+### 6. **requirements.txt** - Dependencies
+```
+streamlit==1.28.1
+openai==1.3.0
+python-dotenv==1.0.0
+langchain==0.0.350
+validators==0.22.0
+```
+
+## Getting Started
+
+1. Clone the repository
+2. Create virtual environment
+3. Install dependencies
+4. Set up environment variables
+5. Run: `streamlit run app.py`

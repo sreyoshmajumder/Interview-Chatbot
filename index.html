@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentScout AI Hiring Assistant - Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>💼 TalentScout</h2>
+                <p class="subtitle">AI Hiring Assistant</p>
+            </div>
+            
+            <div class="interview-status">
+                <h3>Interview Status</h3>
+                <div class="stage-indicator">
+                    <span class="stage-badge active" id="stage-badge">👋 Greeting</span>
+                </div>
+            </div>
+            
+            <div class="collected-info">
+                <h3>Collected Information</h3>
+                <div id="info-container" class="info-list">
+                    <p class="no-info">No information collected yet</p>
+                </div>
+            </div>
+            
+            <div class="sidebar-controls">
+                <button class="btn btn--outline btn--full-width" id="clear-btn" onclick="clearInterview()">
+                    🔄 Restart Interview
+                </button>
+            </div>
+            
+            <div class="about-section">
+                <h3>About</h3>
+                <p class="small-text">This AI assistant conducts initial screening interviews for tech positions. All data is handled securely.</p>
+            </div>
+        </aside>
+        
+        <!-- Main Chat Area -->
+        <main class="chat-container">
+            <div class="chat-header">
+                <div class="header-content">
+                    <h1>TalentScout Hiring Assistant</h1>
+                    <p class="header-subtitle">Initial Screening Interview</p>
+                </div>
+                <div class="message-counter">
+                    <span id="message-count">0</span> messages
+                </div>
+            </div>
+            
+            <div class="chat-messages" id="chat-messages">
+                <!-- Messages will be added here dynamically -->
+            </div>
+            
+            <div class="chat-input-container">
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        id="user-input" 
+                        class="chat-input" 
+                        placeholder="Type your message here..."
+                        autocomplete="off"
+                    />
+                    <button class="btn btn--primary send-btn" id="send-btn" onclick="sendMessage()">
+                        Send 🚀
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
